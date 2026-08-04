@@ -1,0 +1,50 @@
+.mensaje {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contenido {
+    padding: 8px 1px;
+    border-radius: 10px 10px 1px 1px;
+    width: 90%;
+    position: relative;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+.autor {
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.85em;
+    color: #075e54;
+}
+
+.texto {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.hora {
+    font-size: 0.75em;
+    color: gray;
+    align-self: flex-end;
+}
+
+
+.mensaje.recibido {
+    justify-content: flex-start;
+}
+
+.mensaje.recibido .contenido {
+    background-color: #ffffff;
+}
+
+
+.mensaje.enviado {
+    justify-content: flex-end;
+}
+
+.mensaje.enviado .contenido {
+    background-color: #dcf8c6;
+}

@@ -1,0 +1,35 @@
+.sidebar {
+    width: 25%;
+    /* ocupa un cuarto de la pantalla */
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.contacto:hover {
+    background-color: #eaeaea;
+}
+
+.foto-contacto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* círculo */
+    margin-right: 10px;
+    object-fit: cover;
+    /* evita deformaciones */
+}
+
+.contacto span {
+    font-size: 1em;
+    font-weight: 500;
+}
