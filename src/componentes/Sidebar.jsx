@@ -9,7 +9,7 @@ function Sidebar({ contactos, onSelectContacto }) {
                 <div
                     key={c.id}
                     className="contacto"
-                    onClick={() => onSelectContacto(c)}  // 👈 actualiza el contacto seleccionado
+                    onClick={() => onSelectContacto(c)}
                 >
                     <img src={c.foto} alt={c.nombre} className="foto-contacto" />
                     <span>{c.nombre}</span>
@@ -24,7 +24,7 @@ const contactos = [
     {
         id: 1,
         nombre: "Juan",
-        foto: "/img/juan.png",
+        foto: <img src="./img/juan.png" alt="Juan" />,
         mensajes: [
             { autor: "Juan", texto: "Hola, ¿cómo estás?", hora: "13:00", tipo: "recibido" }
         ]
@@ -32,7 +32,7 @@ const contactos = [
     {
         id: 2,
         nombre: "María",
-        foto: "/img/maria.png",
+        foto: <img src="./img/juan.png" alt="Maria" />,
         mensajes: [
             { autor: "María", texto: "¿Listo para la reunión?", hora: "14:00", tipo: "recibido" }
         ]

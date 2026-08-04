@@ -8,7 +8,7 @@ function HomeScreen() {
         {
             id: 1,
             nombre: "Juan",
-            foto: "/img/juan.png",
+            foto: <img src="./img/juan.png" alt="Juan" />,
             mensajes: [
                 { autor: "Juan", texto: "Hola, ¿cómo estás?", hora: "13:00", tipo: "recibido" }
             ]
@@ -16,7 +16,7 @@ function HomeScreen() {
         {
             id: 2,
             nombre: "María",
-            foto: "/img/maria.png",
+            foto: <img src="./img/maria.png" alt="Maria" />,
             mensajes: [
                 { autor: "María", texto: "¿Listo para la reunión?", hora: "14:00", tipo: "recibido" }
             ]
